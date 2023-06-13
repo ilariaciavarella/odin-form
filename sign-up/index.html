@@ -7,23 +7,39 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div></div>
+    <div id="side">
+        <div class="bg-img">
+            <div>
+                <img src="./images/icon.png" alt="white i icon">
+                <span>ilaria</span>
+            </div>
+        </div>
+        <span>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></span>
+    </div>
     <div>
         <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest
         dreams. <br>Sign up <em>now</em> to get started.</h2>
         <h2>You <em>know</em> you want to.</h2>
         <form action="">
-            <fieldset>
+            <div>
                 <h1>Let's do this!</h1>
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-            </fieldset>
+                <fieldset>
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <label for="phone-num">Phone Number</label>
+                    <input type="tel" id="phone-num" name="phone-num">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                    <label for="confirm-pw">Confirm Password</label>
+                    <input type="password" id="confirm-pw" name="confirm-pw">
+                </fieldset>
+            </div>
             <button type="submit">Create Account</button>
-            <span>Already have an account? <a href="">Log in</a></span>
+            <span>Already have an account? <a href="/Users/ilariaciavarella/Library/CloudStorage/OneDrive-Personal/Documents/study/theOdinProject/int_html-css/odin-form/log-in/index.html">Log in</a></span>
         </form>
     </div>
 </body>
