@@ -13,7 +13,7 @@ body {
 }
 
 #left-side {
-    width: 30%;
+    width: 50vw;
     background-image: url(./material/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
     background-position: center;
@@ -46,7 +46,6 @@ body {
     color: white;
     font-size: 0.75rem;
     text-align: center;
-    background-color: blueviolet;
 }
 
 #credits a {
@@ -54,4 +53,52 @@ body {
 }
 #credits a:visited {
     color: rgb(192, 225, 130);
+}
+
+
+#right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ebefe8;
+}
+
+h2 {
+    margin: 0 48px 1.25em 48px;
+    font-weight: 400;
+}
+
+h1 {
+    margin: 0 0 12px 0;
+    font-size: 36px;
+}
+
+form>div {
+    background-color: white;
+    box-shadow: 0 6px 8px -3px rgba(0, 0, 0, 50%);
+    padding: 48px;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+}
+
+fieldset>div {
+    margin: 12px 48px 0 0;
+    min-width: 25%;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-transform: uppercase;
+    font-family: "Red Hat Mono", "Roboto Mono", monospace;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
 }
