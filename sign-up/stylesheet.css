@@ -2,4 +2,56 @@
 
 :root {
     font-family: 'Red Hat Text', 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+#left-side {
+    width: 30%;
+    background-image: url(./material/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 160px 0 16px 0;
+}
+
+#logo>span {
+    color: white;
+    font-family: "Red Hat Mono", "Roboto Mono", monospace;
+    font-size: 3rem;
+}
+
+#logo>img {
+    height: calc(3rem + 56px);
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 50%);
+    padding: 24px;
+}
+
+#credits {
+    color: white;
+    font-size: 0.75rem;
+    text-align: center;
+    background-color: blueviolet;
+}
+
+#credits a {
+    color: white;
+}
+#credits a:visited {
+    color: rgb(192, 225, 130);
 }
