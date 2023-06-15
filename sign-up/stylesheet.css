@@ -70,6 +70,9 @@ h2 {
 
 h1 {
     margin: 0 0 12px 0;
+    font-family:"Red Hat Mono",
+        "Roboto Mono",
+        monospace;
     font-size: 36px;
 }
 
@@ -82,13 +85,14 @@ form>div {
 fieldset {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 48px;
     border: none;
 }
 
 fieldset>div {
-    margin: 12px 48px 0 0;
+    margin-top: 24px;
     min-width: 25%;
     flex: auto;
     display: flex;
@@ -99,6 +103,47 @@ label {
     text-transform: uppercase;
     font-family: "Red Hat Mono", "Roboto Mono", monospace;
     font-size: 14px;
+    letter-spacing: 1px;
     font-weight: 600;
     margin-bottom: 8px;
+}
+
+input {
+    appearance: none;
+    height: 2.25rem;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    background-color: hsla(92, 20%, 35%, 25%);
+}
+
+button {
+    margin: 32px 48px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #596D48;
+    color: white;
+    font-family: "Red Hat Mono", "Roboto Mono", monospace;
+    font-size: 18px;
+    padding: 12px 56px;
+}
+
+button+span {
+    display: block;
+    margin-left: 48px;
+}
+
+a {
+    font-family: "Red Hat Mono",
+        "Roboto Mono",
+        monospace;
+    font-weight: 600;
+    color: #596D48;
+}
+
+a:visited {
+    color: #ca7112;
 }
